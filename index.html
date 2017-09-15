@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gym Site</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="mobile_nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Reserve</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Reserve</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="toggle">
+				<i class="fa fa-bars"></i>
+			</div>
+		<header class="logo">
+			<img src="images/logo.png">
+		</header>
+	</div>
+
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+			<div class="item active"> <img src="./images/slider.jpg" style="width:100%" alt="First slide">
+			  <div class="container">
+				<div class="carousel-caption">
+   
+				</div>
+			  </div>
+			</div>
+			<div class="item"> <img src="./images/slider.jpg" style="width:100%" data-src="" alt="Second    slide">
+			  <div class="container">
+				<div class="carousel-caption">
+				</div>
+			  </div>
+			</div>
+			<div class="item"> <img src="./images/slider.jpg" style="width:100%" data-src="" alt="Third slide">
+			  <div class="container">
+				<div class="carousel-caption">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <a class="left carousel-control left_icon" href="#myCarousel" data-slide="prev">
+			<i class="fa fa-chevron-left"></i>
+		  </a>
+		  <a class="right carousel-control right_icon" href="#myCarousel" data-slide="next">
+			<i class="fa fa-chevron-right "></i>
+		  </a>
+		</div>
+	</div>
+		
+	<div class="container">
+		<div class="exercise_heading">
+			<h3>Fermentum <span class="bigger">Sapien</span></h3>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="exercise_pic">
+					<img src="images/pic_1.jpg">
+					<div class="img_text">
+						<h5>Libero</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="exercise_pic">
+					<img src="images/pic_2.jpg">
+					<div class="img_text">
+						<h5>Magna</h5>
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="exercise_pic">
+					<img src="images/pic_3.jpg">
+					<div class="img_text">
+						<h5>Vulputate</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+		<ul>
+		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		</div>
+		<div class="footer_nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Reserve</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+		<p>COPYRIGHT 2017 ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+	
+	
+	
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $(".toggle").click(function(){
+        $(".mobile_nav").slideToggle("slow");
+    });
+	$(".mobile_nav > ul > li").click(function(){
+        $(".mobile_nav").slideUp("slow");
+    });
+});
+</script>
+</body>
+</html>
